@@ -1,8 +1,7 @@
-﻿using System.IO;
-using System.Text.Json;
-using Teachers.Desktop.Models;
+﻿using System.Text.Json;
+using Teachers.Models;
 
-namespace Teachers.Desktop.DataAccesses;
+namespace Teachers.DataAccess;
 
 public static class JsonService
 {
