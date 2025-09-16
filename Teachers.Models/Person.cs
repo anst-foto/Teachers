@@ -1,4 +1,4 @@
-﻿namespace Teachers.Desktop.Models;
+﻿namespace Teachers.Models;
 
 public abstract class Person
 {
