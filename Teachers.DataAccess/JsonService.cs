@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Text.Encodings.Web;
+using System.Text.Json;
 using Teachers.Models;
 
 namespace Teachers.DataAccess;
@@ -7,7 +8,13 @@ public static class JsonService
 {
     public static void Save(IEnumerable<Teacher> teachers, string path = "teachers.json")
     {
-        var json = JsonSerializer.Serialize(teachers);
+        var options = new JsonSerializerOptions
+        {
+            Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+            WriteIndented = true
+        };
+        options.Converters.Add(new CustomDateTimeConverter("yyyy-MM-dd"));
+        var json = JsonSerializer.Serialize(teachers, options);
         File.WriteAllText(path, json);
     }
 
