@@ -1,4 +1,6 @@
-﻿namespace Teachers.Models;
+﻿using System;
+
+namespace Teachers.Models;
 
 public abstract partial class Person
 {

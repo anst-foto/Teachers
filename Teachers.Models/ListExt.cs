@@ -1,4 +1,7 @@
-﻿namespace Teachers.Models;
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace Teachers.Models;
 
 public static class ListExt
 {

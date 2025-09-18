@@ -1,4 +1,6 @@
-﻿namespace Teachers.Models;
+﻿using System.Collections.Generic;
+
+namespace Teachers.Models;
 
 public partial class Teacher : Person
 {

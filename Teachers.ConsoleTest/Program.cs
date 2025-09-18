@@ -1,4 +1,6 @@
-﻿using Teachers.DataAccess;
+﻿using System;
+using System.Collections.Generic;
+using Teachers.DataAccess;
 using Teachers.Models;
 
 var teacher = new Teacher
