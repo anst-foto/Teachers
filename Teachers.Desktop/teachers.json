@@ -1,0 +1,15 @@
+[
+  {
+    "Faculty": "SoftDev",
+    "Subjects": [
+      "C#",
+      "SQL"
+    ],
+    "Id": "e2258b6a-bfba-4a5a-8fc2-e2b698460db4",
+    "LastName": "Старинин",
+    "FirstName": "Андрей",
+    "Patronymic": "Николаевич",
+    "BirthDate": "1980-01-01",
+    "Phone": "+79042144491"
+  }
+]

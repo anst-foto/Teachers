@@ -9,15 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\"/>
-  </ItemGroup>
-
-  <ItemGroup>
     <Page Update="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <XamlRuntime>Wpf</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Components\Components.csproj" />
+    <ProjectReference Include="..\Teachers.Models\Teachers.Models.csproj" />
+    <ProjectReference Include="..\Teachers.Services\Teachers.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="teachers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
