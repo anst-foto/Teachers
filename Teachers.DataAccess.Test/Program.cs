@@ -5,6 +5,7 @@ using Teachers.Models;
 
 var teacher = new Teacher
 {
+    Id = Guid.NewGuid(),
     LastName = "Старинин",
     FirstName = "Андрей",
     Patronymic = "Николаевич",
