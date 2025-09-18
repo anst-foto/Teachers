@@ -8,7 +8,8 @@ public abstract partial class Person : IEquatable<Person>
     {
         if (other is null) return false;
         if (ReferenceEquals(this, other)) return true;
-        return LastName == other.LastName
+        return Id == other.Id
+               && LastName == other.LastName
                && FirstName == other.FirstName
                && Patronymic == other.Patronymic
                && BirthDate.Equals(other.BirthDate)
@@ -25,7 +26,7 @@ public abstract partial class Person : IEquatable<Person>
 
     public override int GetHashCode()
     {
-        return HashCode.Combine(LastName, FirstName, Patronymic, BirthDate, Phone);
+        return HashCode.Combine(Id, LastName, FirstName, Patronymic, BirthDate, Phone);
     }
 
     public static bool operator ==(Person? left, Person? right)
