@@ -1,7 +1,7 @@
 ﻿using Teachers.DataAccess;
 using Teachers.Models;
 
-var teacher = new Teacher()
+var teacher = new Teacher
 {
     LastName = "Старинин",
     FirstName = "Андрей",

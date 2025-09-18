@@ -9,7 +9,7 @@ public partial class Teacher
         var sb = new StringBuilder();
         sb.AppendLine("Teacher: {");
 
-        var type = this.GetType();
+        var type = GetType();
         var properties = type.GetProperties();
         foreach (var propertyInfo in properties)
         {
@@ -19,13 +19,12 @@ public partial class Teacher
             if (propertyInfo.PropertyType.IsGenericType)
             {
                 var list = (List<string>)value;
-                sb.AppendLine($"\t{name}: [{string.Join(", ", list)}]") ;
+                sb.AppendLine($"\t{name}: [{string.Join(", ", list)}]");
             }
             else
             {
                 sb.AppendLine($"\t{name}: {value}");
             }
-
         }
 
         sb.AppendLine("}");

@@ -8,7 +8,7 @@ public partial class Teacher : IEquatable<Teacher>
         if (ReferenceEquals(this, other)) return true;
         return base.Equals(other)
                && Faculty == other.Faculty
-               && Subjects.TotalEqual(other.Subjects);
+               && Subjects.TotalEquals(other.Subjects);
     }
 
     public override bool Equals(object? obj)
